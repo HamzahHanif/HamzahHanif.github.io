@@ -1,0 +1,50 @@
+
+
+.btn {
+    margin: 20px auto;
+    border: none;
+    padding: 10px 44px;
+    font-size: 36px;
+    position: relative;
+}
+
+.btn::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #dbb380;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn .btn-text {
+    color: white;
+    mix-blend-mode: difference;
+}
+
+
+.btn.rounded1 {
+    border-radius: 50px;
+}
+
+.btn.rounded1 .text-green1 {
+    mix-blend-mode: multiply;
+    color: #dbb380;
+    background: #FFFFFF;
+}
+
+.btn.rounded1::before {
+    border-radius: 50px;
+    width: 25%;
+    background: #dbb380;
+    color: #FFFFFF;
+}
+
+.btn.rounded1:hover::before {
+    background: #bc843b;
+    width: 100%;
+    color: #FFFFFF
+}
+
